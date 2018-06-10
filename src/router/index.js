@@ -3,11 +3,12 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Params from '@/components/params'
 import Hi1 from '@/components/Hi1'
-//  import Hi2 from '@/components/Hi2'
+import Error from '@/components/Error'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -30,6 +31,10 @@ export default new Router({
       path: '/hi1',
       component: Hi1,
       alias: '/hi1alias'
+    },
+    {
+      path: '*',
+      component: Error
     }
   ]
 })

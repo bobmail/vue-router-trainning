@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: 'Hi2',
+  name: 'Error',
   data () {
     return {
-      msg: 'Hi2 Page'
+      msg: '404 Page'
     }
   }
 }
