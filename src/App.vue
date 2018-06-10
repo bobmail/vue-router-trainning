@@ -9,7 +9,9 @@
     <router-link to="/hi1">Hi1</router-link> |
     <router-link to="/hi1alias">Hi1 Alias</router-link> |
     </div>
-    <router-view/>
+    <transition name ="fade" mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
@@ -27,5 +29,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.fade-enter{
+  opacity: 0;
+}
+.fade-enter-active{
+  opacity: 1;
+  transition:opacity 0.5s;
+}
+.fade-leave{
+  opacity: 1;
+}
+.fade-leave-active{
+  opacity: 0;
+  transition:opacity 0.5s;
 }
 </style>
