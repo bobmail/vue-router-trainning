@@ -3,7 +3,9 @@
     <img src="./assets/logo.png">
     <div>
     <router-link to="/">Home</router-link> |
-    <router-link to="/params/123/Bob Title">Params</router-link>
+    <router-link to="/params/123/Bob Title">Params</router-link> |
+    <router-link to="/goHome">GoHome</router-link> |
+    <router-link to="/goParams/618/Gray is my friend">GoParams</router-link> |
     </div>
     <router-view/>
   </div>
