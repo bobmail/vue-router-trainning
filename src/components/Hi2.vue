@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Hi',
+  name: 'Hi2',
   data () {
     return {
       msg: "I'm Hi2"
