@@ -2,7 +2,6 @@
   <div>
     <h2>
       {{msg}}
-      <router-view/>
     </h2>
   </div>
 </template>
@@ -12,7 +11,7 @@ export default {
   name: 'Hi',
   data () {
     return {
-      msg: 'Bejour! welcome Hi'
+      msg: "I'm Hi1"
     }
   }
 }
