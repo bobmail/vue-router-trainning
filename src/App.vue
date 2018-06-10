@@ -6,6 +6,8 @@
     <router-link to="/params/123/Bob Title">Params</router-link> |
     <router-link to="/goHome">GoHome</router-link> |
     <router-link to="/goParams/618/Gray is my friend">GoParams</router-link> |
+    <router-link to="/hi1">Hi1</router-link> |
+    <router-link to="/hi1alias">Hi1 Alias</router-link> |
     </div>
     <router-view/>
   </div>
