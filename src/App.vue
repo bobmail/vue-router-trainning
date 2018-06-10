@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <div>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/params/123/Bob Title">Params</router-link>
+    </div>
     <router-view/>
-    <router-view name = 'left' style="float:left; width:49%; height:50px; background-color:#ccc"/>
-    <router-view name = 'right' style="float:right; width:49%; height:50px; background-color:#ccc"/>
   </div>
 </template>
 
