@@ -8,11 +8,18 @@
 
 <script>
 export default {
-  name: 'Hi1',
   data () {
     return {
       msg: 'Params Page'
     }
+  },
+  beforeRouteEnter: (to, from, next) => {
+    console.log('prepare enter router')
+    next()
+  },
+  beforeRouteLeave: (to, from, next) => {
+    console.log('prepare exit router')
+    next()
   }
 }
 </script>

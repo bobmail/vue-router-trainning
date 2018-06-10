@@ -18,6 +18,13 @@ export default new Router({
     {
       path: '/params/:newsID(\\d+)/:newsTitle',
       component: Params
+      /*
+      beforeEnter: (to, from, next) => {
+        console.log(to)
+        console.log(from)
+        next('/')
+      }
+      */
     },
     {
       path: '/goHome',
