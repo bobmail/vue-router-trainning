@@ -2,6 +2,11 @@
   <div id="app">
     <img src="./assets/logo.png">
     <div>
+      <button @click ="goBack">Back</button>
+      <button @click ="goForward">Forward</button>
+      <button @click ="goHome">Home</button>
+    </div>
+    <div>
     <router-link to="/">Home</router-link> |
     <router-link to="/params/123/Bob Title">Params</router-link> |
     <router-link to="/goHome">GoHome</router-link> |
@@ -17,7 +22,18 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    goBack () {
+      this.$router.go(-1)
+    },
+    goForward () {
+      this.$router.go(1)
+    },
+    goHome () {
+      this.$router.push('/')
+    }
+  }
 }
 </script>
 
